@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Quiz Game - Max Rossiter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 style="color: white;">Max Rossiter</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutme.html">About Me</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="game.html">Game</a></li>
+                <li><a href="discovery.html">Discovery</a></li>
+                <li><a href="contactme.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="game">
+            <div class="card game-container">
+                <h2>Tech Trivia Challenge</h2>
+                <p>Test your knowledge of technology and computer science with this AI-powered quiz game!</p>
+
+                <div id="game-area">
+                    <div id="stats">
+                        <p>Score: <span id="score">0</span></p>
+                        <p>Level: <span id="level">1</span></p>
+                        <div id="health-bar">
+                            <div id="health-fill"></div>
+                        </div>
+                    </div>
+
+                    <div id="question-area">
+                        <h3 id="question">Ready to start?</h3>
+                        <div id="options">
+                            <button class="btn" onclick="startGame()">Start Game</button>
+                        </div>
+                    </div>
+
+                    <div id="feedback" style="display: none;">
+                        <p id="feedback-text"></p>
+                        <div id="explanation"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>How to Play</h3>
+                <ul>
+                    <li>Answer technology-related questions correctly to score points</li>
+                    <li>Each correct answer increases your score and may level you up</li>
+                    <li>Wrong answers decrease your health bar</li>
+                    <li>The game ends when your health reaches zero</li>
+                    <li>Questions get harder as you progress through levels</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Features to Add</h3>
+                <ul>
+                    <li>More diverse question categories</li>
+                    <li>Power-ups and special abilities</li>
+                    <li>Multiplayer functionality</li>
+                    <li>Global leaderboard</li>
+                    <li>Achievement system</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <div class="music-player">
+        <audio controls>
+            <source src="music/background-music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2024 Max Rossiter. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://linkedin.com/in/maxrossiter" class="btn">LinkedIn</a>
+                <a href="https://github.com/maxrossiter" class="btn">GitHub</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/game.js"></script>
+</body>
+</html>
